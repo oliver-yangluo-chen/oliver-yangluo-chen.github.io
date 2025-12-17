@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EECS 182 — Special Participation A</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>EECS 182 — Special Participation A</h1>
+      <p class="subtitle">
+        A searchable archive of student interactions with LLMs (auto-mirrored from Ed).
+      </p>
+
+      <div class="controls">
+        <input id="q" class="input" placeholder="Search by keyword, student, model…" />
+        <select id="student" class="select">
+          <option value="">All students</option>
+        </select>
+      </div>
+
+      <div id="stats" class="muted"></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="results" class="grid"></div>
+    <div id="empty" class="empty hidden">
+      <h2>No matches</h2>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container muted">
+      Standalone GitHub Pages site • Full text mirrored • Auto-updated
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
